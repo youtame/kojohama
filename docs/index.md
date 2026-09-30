@@ -4,8 +4,8 @@ layout: home
 
 hero:
     name: "Template Manual"
-    text: "A VitePress Site"
-    tagline: Ready-to-use templates at your fingertips
+    text: "テンプレート手順書"
+    tagline: すぐに活用できるテンプレートがこの中に
     actions:
         - theme: brand
           text: Markdown Examples

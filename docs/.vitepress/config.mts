@@ -4,10 +4,63 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
     title: "Template",
     description: "Template手順書 | すぐ活用できる手順がこの中に",
-    themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
-        nav: [{ text: "ホーム", link: "/" }],
 
+    locales: {
+        root: {
+            label: "日本語",
+            lang: "ja",
+            title: "Template",
+            description: "Template手順書 | すぐ活用できる手順がこの中に",
+            themeConfig: {
+                nav: [
+                    { text: "ホーム", link: "/" },
+                    { text: "マークダウン例", link: "/markdown-examples" },
+                ],
+                sidebar: [
+                    {
+                        text: "はじめに",
+                        items: [
+                            {
+                                text: "マークダウン例",
+                                link: "/markdown-examples",
+                            },
+                            { text: "API例", link: "/api-examples" },
+                        ],
+                    },
+                ],
+            },
+        },
+        en: {
+            label: "English",
+            lang: "en",
+            link: "/en/",
+            title: "Template",
+            description: "Template Manuals | Quick guides for your projects",
+            themeConfig: {
+                nav: [
+                    { text: "Home", link: "/en/" },
+                    {
+                        text: "Markdown Examples",
+                        link: "/en/markdown-examples",
+                    },
+                ],
+                sidebar: [
+                    {
+                        text: "Getting Started",
+                        items: [
+                            {
+                                text: "Markdown Examples",
+                                link: "/en/markdown-examples",
+                            },
+                            { text: "API Examples", link: "/en/api-examples" },
+                        ],
+                    },
+                ],
+            },
+        },
+    },
+
+    themeConfig: {
         socialLinks: [
             {
                 icon: {
